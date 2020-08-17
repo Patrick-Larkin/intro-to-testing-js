@@ -35,3 +35,35 @@ describe('addOne', function() {
     //     expect(helloWorld()).not.toBe(undefined);
     // });
 });
+
+describe('sayHello', function () {
+    it('should be a defined function', function () {
+        expect(typeof sayHello).toBe('function');
+    });
+    // it('should return a string when passed a name', function () {
+    //     expect(sayHello(myName)).toBe('Hello, ' + myName);
+    // });
+    it('returns a string if input === true', function () {
+        expect(sayHello(true)).toBe("Hello, World!")
+    });
+    it('input is not null', function() {
+        expect(typeof input).toBe('boolean');
+    });
+    // it('should return false when passed a number ' + randomNumber, function() {
+    //     expect(isBoolean(randomNumber)).toBe(false);
+    // });
+    // it('should return false when passed no inputs (undefined) ', function() {
+    //     expect(isBoolean()).toBe(false);
+    // });
+    // it('should return false when passed null', function() {
+    //     expect(isBoolean(null)).toBe(false);
+    // });
+    // it('should return false when passed an array', function() {
+    //     expect(isBoolean(exampleArray)).toBe(false);
+    // });
+});
+
+    // the input is an empty string like ""?
+    // the input is a number like 2.3?
+    // the input is a number inside a string like "5"?
+    // the input is another data type like an array, object, or function?
